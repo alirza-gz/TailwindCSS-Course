@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout - Position</title>
+    <link rel="stylesheet" href="./build/style.css" />
+  </head>
+  <body>
+    <!-- Positioning -->
+    <div class="relative w-1/2 h-12 bg-red-200">
+      <p>Relative Parent</p>
+      <div class="absolute bg-red-500 bottom-0 right-0">
+        <p>Absolute Child</p>
+      </div>
+    </div>
+
+    <!-- Top Left Corner -->
+    <div class="relative w-32 h-32 bg-yellow-100 mb-4">
+      <div class="absolute bg-yellow-300 w-16 h-16 top-0 left-0">01</div>
+    </div>
+
+    <!-- Top Right Corner -->
+    <div class="relative w-32 h-32 bg-yellow-100 mb-4">
+      <div class="absolute bg-yellow-300 w-16 h-16 top-0 right-0">03</div>
+    </div>
+
+    <!-- Bottom Left Corner -->
+    <div class="relative w-32 h-32 bg-yellow-100 mb-4">
+      <div class="absolute bg-yellow-300 w-16 h-16 bottom-0 left-0">07</div>
+    </div>
+
+    <!-- Bottom Right Corner -->
+    <div class="relative w-32 h-32 bg-yellow-100 mb-4">
+      <div class="absolute bg-yellow-300 w-16 h-16 bottom-0 right-0">09</div>
+    </div>
+
+    <!-- Span Top Edge -->
+    <div class="relative w-32 h-32 bg-yellow-100 mb-4">
+      <div class="absolute bg-yellow-300 h-16 inset-x-0 top-0">04</div>
+    </div>
+
+    <!-- Span Left Edge -->
+    <div class="relative w-32 h-32 bg-yellow-100 mb-4">
+      <div class="absolute bg-yellow-300 w-16 inset-y-0 right-0">04</div>
+    </div>
+
+    <!-- Display : block - inline - inline-block -->
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero
+      nemo obcaecati alias inventore, quo rerum. Deleniti repellendus excepturi
+      quis modi? Quas,
+      <span class="inline bg-red-200">nisi distinctio cumque doloremque</span>
+      suscipit totam rem soluta. Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Quis
+      <span class="inline-block bg-green-200">expedita maxime fuga culpa</span>,
+      nesciunt neque accusamus debitis
+      <span class="block bg-blue-200">fugit repudiandae explicabo</span> quod
+      nam error laudantium
+      <span class="bg-yellow-200 hidden">eligendi optio</span>. Enim incidunt
+      iste veniam?
+    </div>
+
+    <!-- Z-index -->
+    <div class="relative h-36">
+      <div class="absolute left-10 w-24 h-24 bg-blue-200 z-40">01</div>
+      <div class="absolute left-20 w-24 h-24 bg-blue-300">02</div>
+      <div class="absolute left-30 w-24 h-24 bg-blue-400 z-10">03</div>
+      <div class="absolute left-40 w-24 h-24 bg-blue-500 z-20">04</div>
+      <div class="absolute left-50 w-24 h-24 bg-blue-600">05</div>
+    </div>
+  </body>
+</html>

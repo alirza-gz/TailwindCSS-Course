@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background - Shadows</title>
+    <link rel="stylesheet" href="./build/style.css" />
+  </head>
+  <body>
+    <!-- Background Classes -->
+    <div
+      class="w-72 h-64 bg-blue-500 bg-cover bg-no-repeat bg-center"
+      style="background-image: url('../public/assets/img1.jpg')"
+    ></div>
+
+    <!-- Gradients -->
+    <div class="h-24 bg-gradient-to-r from-cyan-500 to-blue-100"></div>
+    <div
+      class="h-24 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-200"
+    ></div>
+
+    <!-- Shadows -->
+    <button
+      class="bg-blue-500 px-6 py-2 text-white rounded-lg m-4 shadow-md shadow-blue-300"
+    >
+      Click
+    </button>
+    <button
+      class="bg-blue-500 px-6 py-2 text-white rounded-lg m-4 shadow-lg shadow-blue-300"
+    >
+      Click
+    </button>
+    <button
+      class="bg-blue-500 px-6 py-2 text-white rounded-lg m-4 shadow-xl shadow-blue-300"
+    >
+      Click
+    </button>
+    <button
+      class="bg-blue-500 px-6 py-2 text-white rounded-lg m-4 shadow-inner shadow-blue-300"
+    >
+      Click
+    </button>
+    <button
+      class="bg-blue-500 px-6 py-2 text-white rounded-lg m-4 shadow-lg shadow-blue-700/50"
+    >
+      Click
+    </button>
+
+    <!-- Mix Blend -->
+    <div class="flex justify-center -space-x-24">
+      <div class="mix-blend-multiply bg-pink-400 w-80">01</div>
+      <div class="mix-blend-multiply bg-blue-400 w-80">02</div>
+    </div>
+  </body>
+</html>
