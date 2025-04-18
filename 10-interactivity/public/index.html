@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactivty</title>
+    <link rel="stylesheet" href="./build/style.css" />
+  </head>
+  <body>
+    <!-- Scroll -->
+    <a class="bg-red-500 p-4" href="#item">Scroll to item</a>
+    <!-- Hover State Styling -->
+    <button
+      type="button"
+      class="bg-black text-white py-3 px-5 rounded-lg m-3 hover:bg-orange-500 hover:text-black cursor-pointer"
+    >
+      Submit
+    </button>
+    <!-- Focus State Styling -->
+    <button
+      type="button"
+      class="bg-black text-white py-3 px-5 rounded-lg m-3 focus:bg-green-500 focus:text-black focus:ring-2 focus:ring-red-500 cursor-pointer"
+    >
+      Submit
+    </button>
+    <!-- Active State Styling -->
+    <button
+      type="button"
+      class="bg-black text-white py-3 px-5 rounded-lg m-3 active:bg-yellow-500 active:text-black cursor-pointer"
+    >
+      Submit
+    </button>
+
+    <br />
+
+    <!-- Group : Styling Based on parent state -->
+    <!-- when you need to style an element based on the state of some parent element, mark the parent with the group class, and use group-* modifiers like group-hover to style the target element: -->
+    <a
+      href="#"
+      class="group block max-w-xs mx-auto rounded-lg p-6 bg-white shadow-lg space-y-3 hover:bg-sky-500"
+    >
+      <div class="flex items-center">
+        <h3 class="group-hover:text-white">Card Title</h3>
+      </div>
+      <p class="group-hover:text-white">This is some card text</p>
+    </a>
+
+    <!-- Pseudo Classes -->
+    <ul>
+      <li class="even:bg-green-200 odd:bg-blue-200">item1</li>
+      <li class="even:bg-green-200 odd:bg-blue-200">item2</li>
+      <li class="even:bg-green-200 odd:bg-blue-200">item3</li>
+      <li class="even:bg-green-200 odd:bg-blue-200">item4</li>
+      <li class="even:bg-green-200 odd:bg-blue-200">item5</li>
+    </ul>
+
+    <!-- Appearance -->
+    <select>
+      <option value="yes">yes</option>
+      <option value="no">no</option>
+    </select>
+    <select class="appearance-none">
+      <option value="yes">yes</option>
+      <option value="no">no</option>
+    </select>
+
+    <br />
+
+    <!-- Cursor -->
+    <button
+      type="button"
+      class="bg-purple-300 text-white py-3 px-5 rounded-lg m-3 hover:bg-orange-500 hover:text-black cursor-progress"
+    >
+      Submit
+    </button>
+
+    <!-- Resize -->
+    <textarea class="border border-black rounded resize"></textarea>
+
+    <!-- User Select -->
+    <div class="select-none">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quasi
+      nostrum similique possimus animi perspiciatis suscipit repellat amet nisi
+      nihil cumque libero voluptas, quibusdam dicta vitae dolor aliquam, quae
+      in.
+    </div>
+    <div class="select-text">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quasi
+      nostrum similique possimus animi perspiciatis suscipit repellat amet nisi
+      nihil cumque libero voluptas, quibusdam dicta vitae dolor aliquam, quae
+      in.
+    </div>
+    <div class="select-all">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quasi
+      nostrum similique possimus animi perspiciatis suscipit repellat amet nisi
+      nihil cumque libero voluptas, quibusdam dicta vitae dolor aliquam, quae
+      in.
+    </div>
+    <div class="select-auto">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quasi
+      nostrum similique possimus animi perspiciatis suscipit repellat amet nisi
+      nihil cumque libero voluptas, quibusdam dicta vitae dolor aliquam, quae
+      in.
+    </div>
+    <div id="item">Item</div>
+  </body>
+</html>
