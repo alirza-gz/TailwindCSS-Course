@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+    <style>
+      .toggle-checkbox:checked {
+        right: 0;
+        border-color: #68d391;
+      }
+      .toggle-checkbox:checked + .toggle-label {
+        background-color: #68d391;
+      }
+    </style>
+    <title>Dark Mode</title>
+    <link rel="stylesheet" href="./build/style.css" />
+  </head>
+  <body>
+    <div
+      class="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow-xl"
+    >
+      <h3 class="text-slate-900 dark:text-white font-medium tracking-tight">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ab
+      </h3>
+      <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+        temporibus atque dolor, rem beatae delectus reiciendis quas voluptatem
+        nobis suscipit, aperiam at voluptates reprehenderit quasi sint
+        praesentium aspernatur expedita et.
+      </p>
+    </div>
+    <div
+      class="relative inline-block w-10 mr-2 ml-6 mt-6 align-middle select-none transition duration-300 ease-in"
+    >
+      <input
+        type="checkbox"
+        name="toggle"
+        id="toggle"
+        class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
+      />
+      <label
+        for="toggle"
+        class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
+      ></label>
+    </div>
+    <script>
+      document.getElementById("toggle").addEventListener("change", function () {
+        if (this.checked) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      });
+    </script>
+  </body>
+</html>

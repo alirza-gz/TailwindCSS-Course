@@ -3,12 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>install</title>
+    <title>Transform - Transition - Animation</title>
     <link rel="stylesheet" href="./build/style.css" />
   </head>
   <body>
-    <div>
-      <h1 class="bg-red-500 p-4 text-xl font-bold">first tailwind css</h1>
-    </div>
+    <!-- Transition -->
+    <button
+      class="px-8 py-2 m-24 text-white bg-blue-500 rounded transition-colors duration-700 hover:bg-blue-700"
+    >
+      click me
+    </button>
+    <!-- transition - Transform -->
+    <button
+      class="px-8 py-2 m-24 text-white bg-blue-500 rounded transition ease-in-out delay-150 duration-700 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
+    >
+      click me
+    </button>
+    <button
+      class="px-8 py-2 m-24 text-white bg-blue-500 rounded transition ease-in-out delay-150 duration-700 hover:rotate-45 hover:scale-110 hover:bg-indigo-500"
+    >
+      click me
+    </button>
+    <button
+      class="px-8 py-2 m-24 text-white bg-blue-500 rounded transition ease-in-out delay-150 duration-700 hover:skew-3 hover:scale-110 hover:bg-indigo-500"
+    >
+      click me
+    </button>
+    <button class="px-8 py-2 m-24 text-white bg-green-500 rounded animate-spin">
+      click me
+    </button>
+    <button
+      class="px-8 py-2 m-24 text-white bg-green-500 rounded animate-pulse"
+    >
+      click me
+    </button>
+    <button
+      class="px-8 py-2 m-24 text-white bg-green-500 rounded animate-wiggle"
+    >
+      click me
+    </button>
   </body>
 </html>
